@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 
 import axios from "axios";
@@ -13,7 +13,6 @@ import {
 } from "./Components/styles";
 
 const App = () => {
-  // const [datas, setDatas] = useState({});
 
   useEffect(() => {
     const headers = {
@@ -29,7 +28,6 @@ const App = () => {
       .then((response) => {
         console.log(response.data);
       });
-    // .then((response) => setDatas(response.data));
   }, []);
   return (
     <Container>
